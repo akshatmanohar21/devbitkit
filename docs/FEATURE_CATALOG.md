@@ -31,7 +31,7 @@ in `DESIGN_NARRATIVE.md` Section 10.
 
 | Domain | Capability | Status | ADR | Capability Spec | Notes |
 |--------|-----------|--------|-----|------------------|-------|
-| Generators | Password | In Progress | [ADR-0001](./ADR/0001-Generators-Domain-Inclusion.md) | [Spec](CAPABILITY_SPECS/generators-password.md) | Flags (`--length`, `--no-letters`, `--no-numbers`, `--no-symbols`, `--count`) implemented and manually verified. Not yet Implemented — no automated tests. |
+| Generators | Password | Implemented | [ADR-0001](ADR/0001-Generators-Domain-Inclusion.md) | [Spec](CAPABILITY_SPECS/generators-password.md) | Flags (`--length`, `--no-letters`, `--no-numbers`, `--no-symbols`, `--count`) implemented, manually verified, and covered by 7 automated tests (length, randomness sanity, per-flag exclusion x3, both error conditions). |
 | Generators | API Key | Not Started | — | — | |
 | Generators | UUID | Not Started | — | — | |
 | Hashing | Hash | Not Started | — | — | Candidate for build order step 3. |

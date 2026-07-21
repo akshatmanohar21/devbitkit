@@ -55,7 +55,8 @@ dbk generate password --count 5
 
 ## Status
 
-Implementation complete. Test coverage not yet written — see
-`docs/FEATURE_CATALOG.md` for current status; this capability is not marked
-Implemented there until tests exist, per that document's own status
-definitions.
+Implemented. Covered by 7 automated tests in
+`internal/generators/password_test.go`: output length, basic randomness
+sanity, exclusion correctness for each of letters/numbers/symbols
+individually, and both error conditions (invalid length, all classes
+excluded).
