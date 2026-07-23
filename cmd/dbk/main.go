@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/akshatmanohar21/devbitkit/internal/generators"
+	"github.com/akshatmanohar21/devbitkit/internal/generators/password"
 )
 
 func main() {
@@ -50,7 +50,7 @@ func handleGenerate(capability string, args []string) {
 		}
 
 		for i := 0; i<*count; i++ {
-			password, err := generators.GeneratePassword(
+			password, err := password.GeneratePassword(
 			*length,
 			*noLetters,
 			*noNumbers,
